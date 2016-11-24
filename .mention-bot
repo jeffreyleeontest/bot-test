@@ -29,5 +29,5 @@
   "withLabel": "",
   "delayed": false,
   "delayedUntil": "3d",
-  "skipCollaboratorPR": false
+  "skipCollaboratorPR": false,
 }
