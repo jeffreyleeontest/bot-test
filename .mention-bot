@@ -1,33 +1,11 @@
 {
-  "maxReviewers": 5,
-  "numFilesToCheck": 10,
-  "message": "@pullRequester, thanks! @reviewers, please review this.",
+  "userBlacklist": [
+    "civodul",
+    "jhasse"
+  ],
   "alwaysNotifyForPaths": [
-    {
-      "name": "ghuser",
-      "files": ["src/js/**/*.js"],
-      "skipTeamPrs": false
-    }
+    { "name": "FRidh", "files": ["pkgs/top-level/python-packages.nix", "pkgs/development/interpreters/python/*", "pkgs/development/python-modules/*" ] },
+    { "name": "copumpkin", "files": ["pkgs/stdenv/darwin/*", "pkgs/os-specific/darwin/apple-source-releases/*"] }
   ],
-  "fallbackNotifyForPaths": [
-    {
-      "name": "ghuser",
-      "files": ["src/js/**/*.js"],
-      "skipTeamPrs": false
-    }
-  ],
-  "findPotentialReviewers": true,
-  "fileBlacklist": ["*.md"],
-  "userBlacklist": ["jeffreyleeon"],
-  "userBlacklistForPR": [],
-  "requiredOrgs": [],
-  "actions": ["opened"],
-  "skipAlreadyAssignedPR": false,
-  "skipAlreadyMentionedPR": false,
-  "assignToReviewer": false,
-  "skipTitle": "",
-  "withLabel": "",
-  "delayed": false,
-  "delayedUntil": "3d",
-  "skipCollaboratorPR": false,
+  "fileBlacklist": ["pkgs/top-level/all-packages.nix"]
 }
